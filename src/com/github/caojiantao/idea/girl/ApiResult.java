@@ -38,6 +38,7 @@ public class ApiResult {
     public static class Src {
         private String original;
         private String small;
+        private String large;
         private String landscape;
 
         public String getSmall() {
@@ -62,6 +63,14 @@ public class ApiResult {
 
         public void setLandscape(String landscape) {
             this.landscape = landscape;
+        }
+
+        public String getLarge() {
+            return large;
+        }
+
+        public void setLarge(String large) {
+            this.large = large;
         }
     }
 }

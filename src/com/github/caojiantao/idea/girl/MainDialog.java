@@ -64,7 +64,7 @@ public class MainDialog extends JDialog {
             System.out.println(result);
             ApiResult apiResult = JSON.parseObject(result, ApiResult.class);
 
-            String url = apiResult.getPhotos().get(0).getSrc().getOriginal();
+            String url = apiResult.getPhotos().get(0).getSrc().getLarge();
             paneImage.setImage(url);
 
             // 重绘
